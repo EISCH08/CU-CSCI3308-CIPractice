@@ -149,12 +149,20 @@ START_TEST(test_2d_area)
     a.x = 0;
     a.y= 0;
     b.x = 1;
-    b.y =1;
+    b.y =0;
     c.x = 1;
     c.y =14;
 
     ck_assert(coord_2d_area_triangle(&a,&b,&c)==7);
 
+a.x = 0;
+    a.y= 0;
+    b.x = 0;
+    b.y =0;
+    c.x = 0;
+    c.y =0;
+
+    ck_assert(coord_2d_area_triangle(&a,&b,&c)==0);
 
 }END_TEST
 
