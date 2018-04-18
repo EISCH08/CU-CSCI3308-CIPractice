@@ -156,7 +156,7 @@ START_TEST(test_2d_area)
     ck_assert(coord_2d_area_triangle(&a,&b,&c)==7);
 
 
-}
+}END_TEST
 
 /* coord_2d Test Suite */
 Suite* coord_2d_suite(void)
